@@ -1,7 +1,24 @@
 {
-    "navigationFallback": {
-      "rewrite": "/index.html",
-      "exclude": ["/images/*", "/css/*"]
+  "routes": [
+    {
+      "route": "/login",
+      "serve": "/index.html",
+      "statusCode": 200
+    },
+    {
+      "route": "/signup",
+      "serve": "/index.html",
+      "statusCode": 200
+    },
+    {
+      "route": "/main",
+      "serve": "/index.html",
+      "statusCode": 200
+    },
+    {
+      "route": "/*",
+      "serve": "/index.html",
+      "statusCode": 200
     }
-  }
-  
+  ]
+}
