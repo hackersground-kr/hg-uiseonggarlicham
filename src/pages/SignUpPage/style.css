@@ -15,7 +15,7 @@
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.35);
 }
 
-.leftbox{
+.login .leftbox{
     float: left;
     width: calc(100vh * (712 / 1024));
     height: 100%;
@@ -23,7 +23,7 @@
     position: relative;
 }
 
-.rightbox{
+.login .rightbox{
     float: right;
     width: calc(100vw - (100vh * (712 / 1024)));
     height: 100%;
@@ -41,11 +41,11 @@
 }
 
 @media (max-width: 1000px) {
-    .rightbox {
+    .login .rightbox {
         margin: 0 auto;
         width: 100%;
     }
-    .leftbox{
+    .login .leftbox{
         display: none;
     }
 }
