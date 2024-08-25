@@ -3,29 +3,29 @@
     margin: 0;
 }
 
-.login{
+.signup{
     width: 100vw;
     height: 100vh;
     background-color: #fff;
 }
 
-.loginbox{
+.signupbox{
     width: 90vw;
     height: 85vh;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.35);
 }
 
-.login .leftbox{
-    float: left;
-    width: calc(100vh * (712 / 1024));
+.signup .leftbox{
+    float: right;
+    width: calc(100vh * (631 / 832));
     height: 100%;
     background-color: white;
     position: relative;
 }
 
-.login .rightbox{
-    float: right;
-    width: calc(100vw - (100vh * (712 / 1024)));
+.signup .rightbox{
+    float: left;
+    width: calc(100vw - (100vh * (631 / 832)));
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -35,17 +35,17 @@
 .imagebox{
     width: 100%;
     height: 100%;
-    background-image: url(../../assets/images/login-background.png);
+    background-image: url(../../assets/images/signup-backgound.png);
     background-size: cover;
     background-position: center;
 }
 
 @media (max-width: 1000px) {
-    .login .rightbox {
+    .signup .rightbox {
         margin: 0 auto;
         width: 100%;
     }
-    .login .leftbox{
+    .signup .leftbox{
         display: none;
     }
 }

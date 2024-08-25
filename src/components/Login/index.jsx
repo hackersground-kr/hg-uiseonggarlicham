@@ -103,6 +103,7 @@ const Login = () => {
         pauseOnFocusLoss
         pauseOnHover={false}
         limit={5}
+        style={{width:"350px"}}
        />
     </div>
   );

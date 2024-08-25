@@ -17,7 +17,7 @@
 
 .login .leftbox{
     float: left;
-    width: calc(100vh * (712 / 1024));
+    width: calc(100vh * (631 / 832));
     height: 100%;
     background-color: white;
     position: relative;
@@ -25,14 +25,14 @@
 
 .login .rightbox{
     float: right;
-    width: calc(100vw - (100vh * (712 / 1024)));
+    width: calc(100vw - (100vh * (631 / 832)));
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.imagebox{
+.login .imagebox{
     width: 100%;
     height: 100%;
     background-image: url(../../assets/images/login-background.png);
