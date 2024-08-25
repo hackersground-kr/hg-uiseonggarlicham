@@ -1,6 +1,20 @@
 {
+  "routes": [
+    {
+      "route": "/login",
+      "rewrite": "/index.html"
+    },
+    {
+      "route": "/signup",
+      "rewrite": "/index.html"
+    },
+    {
+      "route": "/main",
+      "rewrite": "/index.html"
+    }
+  ],
   "navigationFallback": {
     "rewrite": "/index.html",
-    "exclude": ["/images/*.{png,jpg,gif}", "/css/*"]
+    "exclude": ["/images/*", "/css/*"]
   }
 }
