@@ -3,3 +3,43 @@
     width: 100vw;
     border-bottom: 1px solid lightgray;
 }
+.logo{
+    width: 100px;
+    margin-left: 20px;
+    height: 100%;
+    float: left;
+    background-color: blueviolet;
+    position:relative;
+}
+.logo img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.header .rightbox{
+    width: 400px;
+    margin-right:20px;
+    height: 100%;
+    float: right;
+    background-color: aqua;
+    position: relative;
+}
+.search{
+    height: 50px;
+    width: 300px;
+    background-color: blue;
+    float: left;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.profile{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    background-color: red;
+    float: right;
+    top: 50%;
+    transform: translateY(50%);
+}
