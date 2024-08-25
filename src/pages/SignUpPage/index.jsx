@@ -13,12 +13,12 @@ const SignUP = () => {
     }
     })
     return (
-        <div className='login'>
+        <div className='signup'>
                 <div className='leftbox'>
                     <div className='imagebox'/>
                 </div>
                 <div className='rightbox'>
-                    <div className='logincomp'>
+                    <div className='signupcomp'>
                         <SignUp/>
                     </div>
                 </div>

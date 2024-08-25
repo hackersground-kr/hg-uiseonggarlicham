@@ -1,7 +1,7 @@
 import React,{useEffect} from 'react'
 import './style.css'
 import { useNavigate } from 'react-router-dom'
-import logo from '../../assets/images/logo.svg'
+import Header from '../../components/Header/index'
 
 const Main = () => {
     const navigate = useNavigate()
@@ -12,13 +12,14 @@ const Main = () => {
     })
   return (
     <div>
-        <div className='header'>
-            <div className='logo'><img src={logo} alt='logo'></img></div>
-            <div className='rightbox'>
-                <div className='search'></div>
-                <div className='profile'></div>
+        <Header/>
+        <div className='banner'>
+            <div className='button-box'>
+                <div className='button'></div>
+                <div className='button'></div>
+                <div className='button'></div>
+                <div className='button'></div>
             </div>
-            
         </div>
     </div>
   )
