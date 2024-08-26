@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.login{
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+}
+
+.loginbox{
+    width: 90vw;
+    height: 85vh;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.35);
+}
+
+.login .leftbox{
+    float: left;
+    width: calc(100vh * (631 / 832));
+    height: 100%;
+    background-color: white;
+    position: relative;
+}
+
+.login .rightbox{
+    float: right;
+    width: calc(100vw - (100vh * (631 / 832)));
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.login .imagebox{
+    width: 100%;
+    height: 100%;
+    background-image: url(../../assets/images/login-background.png);
+    background-size: cover;
+    background-position: center;
+}
+
+@media (max-width: 1000px) {
+    .login .rightbox {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .login .leftbox{
+        display: none;
+    }
+}
