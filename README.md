@@ -113,8 +113,7 @@ Packaging : Jar
 Java : 17
 프로젝트 다운로드 받기
 
-다운로드 들어가서 바탕화면에 가져다놓기
-바탕화면에 있는 폴더를 인텔리제이에서 열기
+인텔리제이에서 파일 열기를 누르고 다운로드를 누르고 파일 열기
 터미널을 열고 git init치기
 
 "github.com" 접속
@@ -126,6 +125,7 @@ https://github.com/hackersground-kr/hg-uiseonggarlicham/tree/main/onna-server에
 파일 하나씩 만들 때마다 git add ./git commit -m "적고 싶은 말"
 git push 레포지토리 주소 main을 쳐서 깃허브에 올리기
 
+https://azure.microsoft.com Azure 주소
 "Azure" 포털에 로그인하거나 계정이 없으면 가입하기
 로컬 머신에 "Azure CLI"가 설치하기
 
