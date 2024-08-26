@@ -23,9 +23,10 @@ jobs:
 
       # Gradle을 사용하여 onna-server 디렉토리에서 빌드를 수행합니다.
       - name: Build with Gradle
-        run: ./gradlew build
-        working-directory: onna-server
-
+        run: |
+          cd onna-server
+          ./gradlew build
+          
       # 빌드된 JAR 파일을 업로드하여 다음 배포 단계에서 사용할 수 있도록 합니다.
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
