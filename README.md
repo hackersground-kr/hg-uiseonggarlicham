@@ -1,70 +1,97 @@
-# Getting Started with Create React App
+# 의성마늘햄 - 온나
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+해커그라운드 해커톤에 참여하는 `의성마늘햄` 팀의 `온나`입니다.
 
-## Available Scripts
+## 참고 문서
 
-In the project directory, you can run:
+> 아래 두 링크는 해커톤에서 앱을 개발하면서 참고할 만한 문서들입니다. 이 문서들에서 언급한 서비스 이외에도 더 많은 서비스들이 PaaS, SaaS, 서버리스 형태로 제공되니 참고하세요.
 
-### `npm start`
+- [순한맛](./REFERENCES_BASIC.md)
+- [매운맛](./REFERENCES_ADVANCED.md)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 제품/서비스 소개
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<!-- 아래 링크는 지우지 마세요 -->
+[제품/서비스 소개 보기](TOPIC.md)
+<!-- 위 링크는 지우지 마세요 -->
 
-### `npm test`
+## 오픈 소스 라이센스
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<!-- 아래 링크는 지우지 마세요 -->
+[오픈소스 라이센스 보기](./LICENSE)
+<!-- 위 링크는 지우지 마세요 -->
 
-### `npm run build`
+## 설치 방법
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+> **아래 제공하는 설치 방법을 통해 심사위원단이 여러분의 제품/서비스를 실제 Microsoft 애저 클라우드에 배포하고 설치할 수 있어야 합니다. 만약 아래 설치 방법대로 따라해서 배포 및 설치가 되지 않을 경우 본선에 진출할 수 없습니다.**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 사전 준비 사항
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+> **여러분의 제품/서비스를 Microsoft 애저 클라우드에 배포하기 위해 사전에 필요한 준비 사항들을 적어주세요.**
+1. Azure 계정 생성
+2. github 계정 생성
+- https://github.com/으로 이동합니다.
+- 로그인을 클릭합니다.
+- 프롬프트에 따라 개인 계정을 만듭니다.
+3. https://docs.github.com/ko/desktop/installing-and-authenticating-to-github-desktop/installing-github-desktop에서 github desktop 설치
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 시작하기
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 리액트로 정적 웹앱 배포
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+github에서 organization 생성
+<img width="1470" alt="image" src="https://github.com/user-attachments/assets/594df44f-7c31-4a26-9468-439bac915d0e">
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+github에서 repository생성(아래 링크 참고)
+https://github.com/new?template_name=vanilla-basic&template_owner=staticwebdev
+<img width="1470" alt="image" src="https://github.com/user-attachments/assets/f06f30ba-4820-4462-b60e-c61ba5c1564c">
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+깃허브 로그인
+가지고 계신 깃허브 아이디로 로그인이 가능합니다.
+File -> Options -> Accounts -> Sign in
 
-### Code Splitting
+프로젝트 생성
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. File > clone Repository 클릭
 
-### Analyzing the Bundle Size
+2. URL > 아래사진을 보고 repository의 링크를 복사하여 URL칸에 붙여넣기
+<img width="1265" alt="image" src="https://github.com/user-attachments/assets/b025a41e-630f-4da2-a16d-bca5d7252c01">
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+3. Clone
+4. 상단바 터미널 > 새 터미널 통해 새로운 터미널 생성
+5. 터미널에 npx create-react-app 원하는프로젝트명 입력
 
-### Making a Progressive Web App
+https://portal.azure.com/ 에 접속 후 좌측 상단 리소스 만들기 클릭
+<img width="1470" alt="image" src="https://github.com/user-attachments/assets/ec981935-dc78-424c-abb8-66d01ee697a7">
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+검색창에 "static web app" 검색
+<img width="1470" alt="image" src="https://github.com/user-attachments/assets/b1909d9d-7bce-4e12-9a2f-8182cbe845e8">
 
-### Advanced Configuration
+정적 웹 앱 선택(아래 사진 하트 눌려있는 항목)
+<img width="1470" alt="image" src="https://github.com/user-attachments/assets/adb91f0d-dadf-4c36-a228-3b9a4887a9a8">
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+만들기 클릭
+<img width="1470" alt="image" src="https://github.com/user-attachments/assets/944e5a7d-6d6c-483b-b24f-197c83206dc9">
 
-### Deployment
+구독에서는 Azure 구독을 선택
+리소스 그룹은 미리 생성해놓은게 있다면 선택, 아니라면 새 링크 만들기를 선택하고 텍스트 상자에 원하는 리소스 그룸명 입력
+이름은 원하는 이름을 입력
+계획유형에서 무료를 선택
+<img width="1470" alt="image" src="https://github.com/user-attachments/assets/6a28a09f-67f9-4092-8b98-015daebc838a">
+원본은 github로 선택, github 계정을 연동, 조직에서 방금 생성한 organization 선택, 리포지토리는 방금 생성한 repository 선택, 분기는 main
+<img width="742" alt="image" src="https://github.com/user-attachments/assets/b98df327-d979-416e-a85e-6132a8a0a439">
+위 항목을 모두 선택하면 아래처럼 뜸.
+<img width="768" alt="image" src="https://github.com/user-attachments/assets/868ac500-2e3a-4c90-afe3-fcc083c8df41">
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+좌측 하단의 검토+만들기 클릭, 최종적으로 만들기를 눌러 정적 웹앱 생성.
+<img width="884" alt="image" src="https://github.com/user-attachments/assets/23aa0e2f-9fa3-410a-948e-0bcebf5c57fb">
 
-### `npm run build` fails to minify
+잠시 기다리면 준비됨 표시가 뜸. 하단 사이트 방문을 눌러 배포된 본인의 사이트 방문
+<img width="1187" alt="image" src="https://github.com/user-attachments/assets/b48e2e1d-e838-4517-9667-5c4bcc49af54">
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 만약 생성 과정에서 오류가 발생한다면 github내의 본인 권한을 admin으로 설정
+
+> **여러분의 제품/서비스를 Microsoft 애저 클라우드에 배포하기 위한 절차를 구체적으로 나열해 주세요.**
