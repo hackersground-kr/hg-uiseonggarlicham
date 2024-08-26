@@ -102,24 +102,36 @@ https://portal.azure.com/ 에 접속 후 좌측 상단 리소스 만들기 클�
 
 
 ## 자바와 스프링 부트를 활용한 서버 배포
-준비물 : 자바 17버전 이상, 인텔리제이
+준비물 : 자바 17버전 이상, 인텔리제이 등
+https://www.java.com/ko/download/ie_manual.jsp?locale=ko 자바 다운로드 링크
+https://www.jetbrains.com/ko-kr/idea/download/?section=mac
+
+start.spring.io 접속 후 프로젝트 하나 만들기
+project : Gradle - Groovy
+spring boot : 3.3.3
+Packaging : Jar
+Java : 17
+프로젝트 다운로드 받기
+
+다운로드 들어가서 바탕화면에 가져다놓기
+바탕화면에 있는 폴더를 인텔리제이에서 열기
+터미널을 열고 git init치기
 
 "github.com" 접속
 깃허브 로그인 하기
 레포지토리 만들기
+https://github.com/hackersground-kr/hg-uiseonggarlicham/tree/main/onna-server에
+있는 파일 똑같이 따라 만들기
 
-start.spring.io 접속 후 프로젝트 하나 만들기
-프로젝트 다운로드 받기
-인텔리제이에서 다운받은 폴더 열기
-
-만들고 싶은 기능 만들기
+파일 하나씩 만들 때마다 git add ./git commit -m "적고 싶은 말"
+git push 레포지토리 주소 main을 쳐서 깃허브에 올리기
 
 "Azure" 포털에 로그인하거나 계정이 없으면 가입하기
 로컬 머신에 "Azure CLI"가 설치하기
 
 터미널을 열고 "az login" 치기
 
-터미널에 "az group create --name myResourceGroup --location eastus" 리소스 그룹 생성하기
+터미널에 "az group create --name myResourceGroup --location eastus" 리소스 그룹 생성하기
 az appservice plan create --name myAppServicePlan --resource-group myResourceGroup --sku B1 --is-linux
 명령어를 사용하여 App Service 플랜 생성하기
 
