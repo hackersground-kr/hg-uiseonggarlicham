@@ -48,12 +48,13 @@ github에서 repository생성(아래 링크 참고)
 https://github.com/new?template_name=vanilla-basic&template_owner=staticwebdev
 <img width="1470" alt="image" src="https://github.com/user-attachments/assets/f06f30ba-4820-4462-b60e-c61ba5c1564c">
 
+github desktop 실행
 
 깃허브 로그인
-가지고 계신 깃허브 아이디로 로그인이 가능합니다.
+가지고 있는 깃허브 아이디로 로그인이 가능
 File -> Options -> Accounts -> Sign in
 
-프로젝트 생성
+프로젝트 클론
 
 1. File > clone Repository 클릭
 
@@ -63,6 +64,11 @@ File -> Options -> Accounts -> Sign in
 3. Clone
 4. 상단바 터미널 > 새 터미널 통해 새로운 터미널 생성
 5. 터미널에 npx create-react-app 원하는프로젝트명 입력
+6. react 설치 완료 후 깃허브 좌측 아래 제목에 react설치를 적고 아래의 파란색 버튼 클릭(commit to ~~~)
+   <img width="247" alt="image" src="https://github.com/user-attachments/assets/9ad6bb87-a900-41d8-a65c-8f2e6c9bef2a">
+7. commit 완료 후 우측 위 3번쨰 버튼 클릭 (publish branch)
+   <img width="886" alt="image" src="https://github.com/user-attachments/assets/9a44b4c8-45df-4271-b6e3-32ea2fed3b38">
+
 
 https://portal.azure.com/ 에 접속 후 좌측 상단 리소스 만들기 클릭
 <img width="1470" alt="image" src="https://github.com/user-attachments/assets/ec981935-dc78-424c-abb8-66d01ee697a7">
