@@ -1,0 +1,122 @@
+.everything{
+    margin: 0 20%;
+}
+a{
+    font-size: 16px;
+    font-family: 'Pretendard';
+    text-decoration-line: none;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    margin-top: 13px;
+    margin-left: 5px;
+    position: relative;
+    right: 30%;
+}
+a img input{
+    width: 15px;
+    height: 15px;
+    flex: 0;
+
+}
+.photo{
+    width: 338px;
+    height: 369px;
+    background-color: #EDEDED;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 30px;
+    position: relative;
+    right: 50px;
+    top: 78px;
+}
+.photo img{
+    position: relative;
+    top: 33%;
+}
+.photo input{
+    position: relative;
+    top: 80%;
+    right: -25px;
+}
+.element{
+    display: flex;
+    flex-direction: row;
+    margin: 0 100px;
+}
+.write{
+    width: 316px;
+    height: 482px;
+    flex:  0 auto;
+}
+.place ,.time, .money, .detail{
+    font-family: 'Pretendard';
+    font-size: 16px;
+    font-weight: 900;
+}
+/*아무리 길게 검색해도 pen을 가리지 않게 수정 필요*/
+.pen{
+    position:relative;
+    bottom: 42px;
+    left: 90%;
+}
+.time{
+    position: relative;
+    
+}
+.date{
+    width: 290px;
+    height: 44px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid #CCCBCC;
+    padding: 0 12px;
+    position: relative;
+    right: 10px;
+    color: #7E7E7F;
+}
+.mom{
+    position: relative;
+    bottom: 7px;
+}
+.datetime{
+    position: relative;
+    bottom: 17px;
+}
+.W{
+    position: relative;
+    bottom: 45px;
+    left: 90%;
+    color: #6B6B6B;
+}
+.story{
+    position: relative;
+    bottom: 15px;
+}
+.detail{
+    position: relative;
+    bottom: 10px;
+}
+.story textarea{
+    border: 1px solid #CCCBCC;
+    border-radius: 10px;
+    padding: 17px;
+}
+.btn-cls{
+    position: relative;
+    text-align: center;
+    top: 3px;
+    right: 30%;
+    font-size: 20px;
+    font-family: 'Pretendard';
+    font-weight: 600;
+    width: 140px;
+    height: 52px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+.btn{
+    position: relative;
+    top: 30%;
+}

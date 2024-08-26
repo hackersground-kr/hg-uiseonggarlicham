@@ -2,7 +2,9 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Login from './pages/LoginPage/index';
 import Signup from './pages/SignUpPage/index'
-import Main from './pages/MainPage/index'
+import Main from './pages/MainPage/index';
+import Write from './pages/WritePage/index';
+import MyApp from './pages/ Calendar/Calendar';
   
 function App() {
   
@@ -13,6 +15,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup/>}/>
         <Route path="/main" element={<Main/>}/>
+        <Route path="/write" element={<Write/>}/>
       </Routes>
     </BrowserRouter>
   );
