@@ -19,26 +19,19 @@ jobs:
           java-version: '17'
           distribution: 'microsoft'
 
-      - name: Install SDKMAN!
-        run: |
-          curl -s "https://get.sdkman.io" | bash
-          source "$HOME/.sdkman/bin/sdkman-init.sh"
+      - name: Set up Gradle
+        uses: gradle/gradle-build-action@v2
+        with:
+          gradle-version: '8.0' # 필요한 Gradle 버전으로 변경
 
-      - name: Install Groovy using SDKMAN!
-        run: |
-          source "$HOME/.sdkman/bin/sdkman-init.sh"
-          sdk install groovy
-
-      - name: Run Groovy Script
-        run: |
-          source "$HOME/.sdkman/bin/sdkman-init.sh"
-          groovy your_script_name.groovy
+      - name: Build with Gradle
+        run: ./gradlew clean build
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
           name: java-app
-          path: '${{ github.workspace }}/target/*.jar'
+          path: 'build/libs/*.jar'
 
   deploy:
     runs-on: ubuntu-latest
