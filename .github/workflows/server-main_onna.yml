@@ -34,7 +34,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: java-app
-          path: 'build/libs/onna-0.0.1-SNAPSHOT.jar'
+          path: 'build/libs/onna-0.0.1-SNAPSHOT.jar'  # 정확한 파일 경로
 
   deploy:
     runs-on: ubuntu-latest
@@ -57,7 +57,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v3
         with:
-          app-name: 'onna'
+          app-name: 'YOUR_WEB_APP_NAME'
           slot-name: 'Production'
-          package: 'build/libs/onna-0.0.1-SNAPSHOT.jar'
+          package: 'build/libs/onna-0.0.1-SNAPSHOT.jar'  # 정확한 파일 경로
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE }}
