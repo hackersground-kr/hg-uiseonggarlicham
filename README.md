@@ -112,5 +112,24 @@ start.spring.io 접속 후 프로젝트 하나 만들기
 프로젝트 다운로드 받기
 인텔리제이에서 다운받은 폴더 열기
 
-Azure에 접속 후 App services 만들기
+만들고 싶은 기능 만들기
+
+"Azure" 포털에 로그인하거나 계정이 없으면 가입하기
+로컬 머신에 "Azure CLI"가 설치하기
+
+터미널을 열고 "az login" 치기
+
+터미널에 "az group create --name myResourceGroup --location eastus" 리소스 그룹 생성하기
+az appservice plan create --name myAppServicePlan --resource-group myResourceGroup --sku B1 --is-linux
+명령어를 사용하여 App Service 플랜 생성하기
+
+az webapp create --resource-group myResourceGroup --plan myAppServicePlan --name myUniqueAppName --runtime "PYTHON|3.8"
+웹 애플리케이션 생성하기
+
+az webapp up --name myUniqueAppName --resource-group myResourceGroup --runtime "PYTHON|3.8"
+로컬 애플리케이션 배포하기
+
+배포가 완료되면 다음 주소로 이동하여 웹이 잘 작동하는지 확인하기
+https://(내 웹 서비스 이름).azurewebsites.net
+
 > **여러분의 제품/서비스를 Microsoft 애저 클라우드에 배포하기 위한 절차를 구체적으로 나열해 주세요.**
