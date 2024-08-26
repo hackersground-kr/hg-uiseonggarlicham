@@ -11,6 +11,10 @@
     {
       "route": "/main",
       "rewrite": "/index.html"
+    },
+    {
+      "route": "/write",
+      "rewrite": "/index.html"
     }
   ],
   "navigationFallback": {
