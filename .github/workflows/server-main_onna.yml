@@ -20,7 +20,7 @@ jobs:
           distribution: 'microsoft'
 
       - name: Set up Groovy
-        uses: sdkman/sdkman-action@v1
+        uses: sdkman/sdkman-action@v4
         with:
           sdkman-candidates: 'groovy'
           
