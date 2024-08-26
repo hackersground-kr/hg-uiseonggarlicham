@@ -6,10 +6,8 @@ import com.example.onna.exception.CustomException;
 import com.example.onna.exception.ErrorCode;
 import com.example.onna.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -51,5 +49,16 @@ public class UserService {
     private Boolean checkEmailVerification(String email) {
         Matcher matcher = pattern.matcher(email);
         return matcher.matches();
+    }
+
+    public UserEntity authenticateUser(String email, String password) {
+        UserEntity userEntity = userRepository.findByEmail(email)
+                .orElseThrow(() -> new CustomException(ErrorCode.USER_NOT_FOUND));
+
+        if (userEntity != null && passwordEncoder.matches(password, userEntity.getPassword())) {
+            return userEntity;
+        } else {
+            return null;
+        }
     }
 }
