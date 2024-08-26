@@ -19,8 +19,13 @@ jobs:
           java-version: '17'
           distribution: 'microsoft'
 
-      - name: Build with Maven
-        run: mvn clean install
+      - name: Set up Groovy
+        uses: sdkman/sdkman-action@v1
+        with:
+          sdkman-candidates: 'groovy'
+          
+      - name: Run Groovy Script
+        run: groovy your_script_name.groovy
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
@@ -45,7 +50,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v3
         with:
-          app-name: 'YOUR_APP_NAME'
-          slot-name: 'Production'
+          app-name: 'YOUR_APP_NAME'  # 실제 Azure Web App 이름으로 변경
+          slot-name: 'Production'   # 실제 슬롯 이름 확인 및 변경
           package: '*.jar'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_YOUR_SECRET }}
