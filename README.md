@@ -40,11 +40,11 @@
 
 ## 리액트로 정적 웹앱 배포
 
-github에서 organization 생성
+github에서 organization 생성(링크 참고)https://github.com/account/organizations/new?plan=free&ref_cta=Create%2520a%2520free%2520organization&ref_loc=cards&ref_page=%2Forganizations%2Fplan
 <img width="1470" alt="image" src="https://github.com/user-attachments/assets/594df44f-7c31-4a26-9468-439bac915d0e">
 
 
-github에서 repository생성(아래 링크 참고)
+github에서 repository생성(링크 참고)
 https://github.com/new?template_name=vanilla-basic&template_owner=staticwebdev
 <img width="1470" alt="image" src="https://github.com/user-attachments/assets/f06f30ba-4820-4462-b60e-c61ba5c1564c">
 
