@@ -19,6 +19,9 @@ jobs:
           java-version: '17'
           distribution: 'microsoft'
 
+      - name: Install dependencies
+        working-directory: ./onna-server
+
       - name: Build with Gradle
         run: ./gradlew build
         working-directory: onna-server
