@@ -51,4 +51,4 @@ jobs:
           app-name: 'onna'
           slot-name: 'Production'
           package: '*.jar'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_F1ADA02B7D6140789CD75A1F7CA2859C }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_1E2AF7E00F15410A8620A4DA50E99CD2 }}
