@@ -26,7 +26,7 @@ const Main = () => {
         <Header/>
         <div className='banner'>
             <div className='button-box'>
-                <div className='button'>
+                <div className='button' onclick = {gotocalender}>
                     <img src={calender} alt='캘린더'/>
                     <p>일정 확인</p>
                 </div>
