@@ -64,9 +64,4 @@
 발표자료 pdf
 
 
-아키텍쳐
-images/Group 1.png
-
-
-시연영상
-https://www.youtube.com/@jms-videomaker1601
+[아키텍쳐](./images/SysArchitecture.png)
