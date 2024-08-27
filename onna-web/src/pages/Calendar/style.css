@@ -1,0 +1,9 @@
+.cal{
+    width: 70%;
+    height: 500px;
+    font-family: 'Pretendard';
+    font-size: 23px;
+    position: relative;
+    margin: 0 15%;
+    top: 70px;
+}
