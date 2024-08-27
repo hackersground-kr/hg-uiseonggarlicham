@@ -148,4 +148,12 @@ az webapp up --name myUniqueAppName --resource-group myResourceGroup --runtime "
 배포가 완료되면 다음 주소로 이동하여 웹이 잘 작동하는지 확인하기
 https://(내 웹 서비스 이름).azurewebsites.net
 
+https://(내 웹 서비스 이름).azurewebsites.net:8080/auth/resister에서 회원가입 하기
+https://(내 웹 서비스 이름).azurewebsites.net:8080/auth/login에서 로그인 하기
+
+https://(내 웹 서비스 이름).azurewebsites.net:8080/board/write에서 글 작성하기
+글을 잘못 작성했을 경우 https://(내 웹 서비스 이름).azurewebsites.net:8080/board/update/자신의 게시글 아이디로 들어가서 글 수정하기
+
+https://(내 웹 서비스 이름).azurewebsites.net:8080/board/list에서 글 목록 보기
+글목록 페이지에서 읽고 싶은 글 고르기
 > **여러분의 제품/서비스를 Microsoft 애저 클라우드에 배포하기 위한 절차를 구체적으로 나열해 주세요.**
