@@ -41,11 +41,23 @@
 ## 리액트로 정적 웹앱 배포
 
 github에서 organization 생성(링크 참고)https://github.com/account/organizations/new?plan=free&ref_cta=Create%2520a%2520free%2520organization&ref_loc=cards&ref_page=%2Forganizations%2Fplan
+
+1. Organization name에는 본인이 원하는 이름을 적습니다.
+2. Contact email에는 본인이 사용하는 이메일을 적습니다.
+3. This organization belongs to:에서 My personal account를 선택합니다
+4. Verify your account에서 계정을 인증합니다.
+5. Add-ons는 선택하지 않고 가장 하단의 체크박스를 선택 후 초록색 버튼이 활성화 되면 next를 누릅니다.
 <img width="1470" alt="image" src="https://github.com/user-attachments/assets/594df44f-7c31-4a26-9468-439bac915d0e">
+
+다음으로 Skip this step을 눌러 생성을 완료합니다.
+<img width="950" alt="image" src="https://github.com/user-attachments/assets/d4ac7755-2ebd-45d1-bba3-4bf7fa020db5">
+
 
 
 github에서 repository생성(링크 참고)
 https://github.com/new?template_name=vanilla-basic&template_owner=staticwebdev
+
+1. Repository template을 none으로 설정
 <img width="1470" alt="image" src="https://github.com/user-attachments/assets/f06f30ba-4820-4462-b60e-c61ba5c1564c">
 
 github desktop 실행
