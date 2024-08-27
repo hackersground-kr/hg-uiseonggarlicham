@@ -10,7 +10,7 @@ const Main = () => {
     const navigate = useNavigate()
 
     const gotoevent = () =>{
-        navigate("/event")
+        navigate("/festival")
     }
     const gotowrite = () =>{
         navigate("/write")
