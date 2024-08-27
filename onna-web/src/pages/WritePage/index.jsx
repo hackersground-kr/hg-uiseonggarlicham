@@ -3,25 +3,30 @@ import './style.css';
 import Header from '../../components/Header/index';
 import Arrows from '../../assets/images/back-arrows.png';
 import Pen from '../../assets/images/pen.png';
-import Photo from '../../assets/images/photo.png'
+import add from '../../assets/images/photo.png'
+import {Link, useNavigate} from 'react-router-dom'
 
 const Write=()=>{
+    const navigate = useNavigate()
+    if (localStorage.getItem("refreshToken") != null){
+        navigate("/login")
+    }
     return(
         <div>
             <Header/>
             <div className="everything">
-            <a href="#"><img src={Arrows}/>뒤로가기</a>
+            <Link to="/main"><img src={Arrows} alt="back"/>뒤로가기</Link>
             <input className="bottom-border" type="text" placeholder="행사 이름을 입력하세요"/>
             {/* <input type='text' placeholder='bottom border' class='bottom-border'/> */}
             <div className="element"> 
             <div className="photo">
-                <img src={Photo}></img>
+                <img src={add} alt="add"></img>
                 <input type="file" accept="image/*"></input>
             </div>
             <div className="write">
                 <div className="place">행사 장소</div>
                 <input className="re-place" type="text" placeholder="행사 장소를 입력하세요"></input>
-                <img className="pen" src={Pen}/>
+                <img className="pen" src={Pen} alt="pen"/>
                 <div className="datetime">
                 <div className="time">행사 기간</div>
                 <input className="date" type="date"></input>

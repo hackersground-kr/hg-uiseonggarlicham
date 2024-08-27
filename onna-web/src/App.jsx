@@ -4,6 +4,7 @@ import Login from './pages/LoginPage/index';
 import Signup from './pages/SignUpPage/index'
 import Main from './pages/MainPage/index';
 import Write from './pages/WritePage/index';
+
 import CalendarComponent  from './pages/Calendar/index';
 import Festival from './pages/FestivalPage/index';
 
@@ -17,7 +18,7 @@ function App() {
         <Route path="/main" element={<Main/>}/>
         <Route path="/write" element={<Write/>}/>
         <Route path='/calendar' element={<CalendarComponent/>}/>
-        <Route path='/festival' element={<Festival/>}/>
+        <Route path="/festival" element={<Festival/>}/>
       </Routes>
     </BrowserRouter>
   );
