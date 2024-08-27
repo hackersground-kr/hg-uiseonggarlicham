@@ -18,6 +18,9 @@ const Main = () => {
     const gotologin = () =>{
         navigate("/login")
     }
+    const gotocalender = () =>{
+        navigate("/calender")
+    }
   return (
     <div>
         <Header/>
