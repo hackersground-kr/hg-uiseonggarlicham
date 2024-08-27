@@ -4,11 +4,11 @@ import Login from './pages/LoginPage/index';
 import Signup from './pages/SignUpPage/index'
 import Main from './pages/MainPage/index';
 import Write from './pages/WritePage/index';
-import Festival from './pages/FestivalPage/index'
-import CalendarComponent from './pages/Calendar/index'
-  
+
+import CalendarComponent  from './pages/Calendar/index';
+import Festival from './pages/FestivalPage/index';
+
 function App() {
-  
   return (
     <BrowserRouter>
       <Routes>
