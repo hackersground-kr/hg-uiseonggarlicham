@@ -113,14 +113,16 @@ https://portal.azure.com/ 에 접속 후 좌측 상단 리소스 만들기 클�
 만들기 클릭
 <img width="1470" alt="image" src="https://github.com/user-attachments/assets/944e5a7d-6d6c-483b-b24f-197c83206dc9">
 
-구독에서는 Azure 구독을 선택
-리소스 그룹은 미리 생성해놓은게 있다면 선택, 아니라면 새 링크 만들기를 선택하고 텍스트 상자에 원하는 리소스 그룸명 입력
-이름은 원하는 이름을 입력
-계획유형에서 무료를 선택
+- 구독에서는 Azure 구독을 선택
+- 리소스 그룹은 미리 생성해놓은게 있다면 선택, 아니라면 새 링크 만들기를 선택하고 텍스트 상자에 원하는 리소스 그룸명 입력
+- 이름은 원하는 이름을 입력
+- 계획유형에서 무료를 선택
 <img width="1470" alt="image" src="https://github.com/user-attachments/assets/6a28a09f-67f9-4092-8b98-015daebc838a">
+
 원본은 github로 선택, github 계정을 연동, 조직에서 방금 생성한 organization 선택, 리포지토리는 방금 생성한 repository 선택, 분기는 main
 <img width="742" alt="image" src="https://github.com/user-attachments/assets/b98df327-d979-416e-a85e-6132a8a0a439">
 위 항목을 모두 선택하면 아래처럼 뜸.
+빌드 세부 정보는 그대로 두면 됨.
 <img width="768" alt="image" src="https://github.com/user-attachments/assets/868ac500-2e3a-4c90-afe3-fcc083c8df41">
 
 좌측 하단의 검토+만들기 클릭, 최종적으로 만들기를 눌러 정적 웹앱 생성.
