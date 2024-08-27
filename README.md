@@ -1,4 +1,4 @@
-<img width="180" alt="image" src="https://github.com/user-attachments/assets/8f0acfb5-bfa9-42f7-97ef-46d679489b81"># 의성마늘햄 - 온나
+# 의성마늘햄 - 온나
 
 해커그라운드 해커톤에 참여하는 `의성마늘햄` 팀의 `온나`입니다.
 
