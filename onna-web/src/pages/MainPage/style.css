@@ -1,6 +1,6 @@
 .banner{
     width: 100vw;
-    height: 400px;
+    height: calc(100vh - 81px);
     position: relative;
     background-image: url("../../assets//images/banner_bg.png");
     background-size:cover;
@@ -14,6 +14,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    align-content: center;
     flex-wrap: wrap;
     float: left;
     margin-left: 150px;
@@ -27,6 +28,7 @@
     margin:10px;
     display: inline-block;
     position: relative;
+    cursor: pointer;
 }
 .main_banner{
     width: 600px;
@@ -34,7 +36,8 @@
     border-radius: 10px;
     background-image: url("../../assets/images/banner_main.jpg");
     float: right;
-    margin-top: 50px;
+    margin-top: calc((100vh - 81px) / 2);
+    transform: translate(0,-50%);
     margin-right: 150px;
     position: relative;
 }
