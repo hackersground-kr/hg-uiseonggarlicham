@@ -1,4 +1,4 @@
-# 의성마늘햄 - 온나
+<img width="180" alt="image" src="https://github.com/user-attachments/assets/8f0acfb5-bfa9-42f7-97ef-46d679489b81"># 의성마늘햄 - 온나
 
 해커그라운드 해커톤에 참여하는 `의성마늘햄` 팀의 `온나`입니다.
 
@@ -40,7 +40,7 @@
 
 ## 리액트로 정적 웹앱 배포
 
-github에서 organization 생성(링크 참고)https://github.com/account/organizations/new?plan=free&ref_cta=Create%2520a%2520free%2520organization&ref_loc=cards&ref_page=%2Forganizations%2Fplan
+github에서 organization 생성(링크 참고) https://github.com/account/organizations/new?plan=free&ref_cta=Create%2520a%2520free%2520organization&ref_loc=cards&ref_page=%2Forganizations%2Fplan
 
 1. Organization name에는 본인이 원하는 이름을 적습니다.
 2. Contact email에는 본인이 사용하는 이메일을 적습니다.
@@ -58,6 +58,11 @@ github에서 repository생성(링크 참고)
 https://github.com/new?template_name=vanilla-basic&template_owner=staticwebdev
 
 1. Repository template을 none으로 설정
+2. owner를 방금 생성한 organization으로 변경
+3. Repository name에 본인이 원하는 이름 입력
+4. Description (optional)를 비워둠
+5. 다른사람들이 내 코드를 볼 수있게 하려면 Public, 아니면 Private 선택
+6. 우측아래 create repository 클릭
 <img width="1470" alt="image" src="https://github.com/user-attachments/assets/f06f30ba-4820-4462-b60e-c61ba5c1564c">
 
 github desktop 실행
@@ -70,26 +75,29 @@ File -> Options -> Accounts -> Sign in
 
 1. File > clone Repository 클릭
 
-2. URL > 아래사진을 보고 repository의 링크를 복사하여 URL칸에 붙여넣기
-<img width="1265" alt="image" src="https://github.com/user-attachments/assets/b025a41e-630f-4da2-a16d-bca5d7252c01">
-3. Clone
-4. https://code.visualstudio.com/에 접속 후 visual studio 설치
+2. URL > 아래사진을 보고 방금 생성한 repository의 링크를 복사하여 URL칸에 붙여넣기
+   링크 복사 방법은 아래 사진 참고
+   1번 혹은 2번사진의 링크대로 복하
+   <img width="1306" alt="image" src="https://github.com/user-attachments/assets/78359627-01f6-48b9-989c-f129620709ee">
+   <img width="1265" alt="image" src="https://github.com/user-attachments/assets/b025a41e-630f-4da2-a16d-bca5d7252c01">
+4. Clone
+5. https://code.visualstudio.com/에 접속 후 visual studio 설치
    <img width="1470" alt="image" src="https://github.com/user-attachments/assets/1f18d969-fb18-4b9e-84c1-2a0c9d9bb7e3">
    
-5. github desktop의 상단 repository 클릭 후(open in visual studio code) 클릭
+6. github desktop의 상단 repository 클릭 후(open in visual studio code) 클릭
 <img width="266" alt="image" src="https://github.com/user-attachments/assets/86a746c8-47d3-474c-b5d0-547469a52147">
 
-6. visualstudio 의 상단바의 터미널 > 새 터미널 통해 새로운 터미널 생성
+7. visualstudio 의 상단바의 터미널 > 새 터미널 통해 새로운 터미널 생성
 
-7. 터미널에 npx create-react-app 원하는프로젝트명 입력
+8. 터미널에 npx create-react-app 원하는프로젝트명 입력
 <img width="709" alt="image" src="https://github.com/user-attachments/assets/425898c2-ffe5-46ad-b88e-11f8f04f9278">
 
 
-8. react 설치 완료 후 깃허브 좌측 아래 제목에 react설치를 적고 아래의 파란색 버튼 클릭(commit to ~~~)
+9. react 설치 완료 후 깃허브 좌측 아래 제목에 react설치를 적고 아래의 파란색 버튼 클릭(commit to ~~~)
 
    <img width="247" alt="image" src="https://github.com/user-attachments/assets/9ad6bb87-a900-41d8-a65c-8f2e6c9bef2a">
 
-9. commit 완료 후 우측 위 3번쨰 버튼 클릭 (publish branch)
+10. commit 완료 후 우측 위 3번쨰 버튼 클릭 (publish branch)
    <img width="886" alt="image" src="https://github.com/user-attachments/assets/9a44b4c8-45df-4271-b6e3-32ea2fed3b38">
 
 
