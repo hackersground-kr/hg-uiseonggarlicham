@@ -30,10 +30,10 @@
 > **여러분의 제품/서비스를 Microsoft 애저 클라우드에 배포하기 위해 사전에 필요한 준비 사항들을 적어주세요.**
 1. Azure 계정 생성
 2. github 계정 생성
-- https://github.com/으로 이동합니다.
+- https://github.com/ 으로 이동합니다.
 - 로그인을 클릭합니다.
 - 프롬프트에 따라 개인 계정을 만듭니다.
-3. https://docs.github.com/ko/desktop/installing-and-authenticating-to-github-desktop/installing-github-desktop에서 github desktop 설치
+3. https://docs.github.com/ko/desktop/installing-and-authenticating-to-github-desktop/installing-github-desktop 에서 github desktop 설치
 
 
 ## 시작하기
