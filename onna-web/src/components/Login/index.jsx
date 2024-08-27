@@ -80,7 +80,6 @@ const Login = () => {
   return (
     <div className="login-container">
       <h1>로그인</h1>
-      <p className='title'>로그인하고 잃어버린 물건 찾기!</p>
       <input
     type="text"
     onPaste={handleEmailChange}

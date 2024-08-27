@@ -1,11 +1,17 @@
 import React from 'react'
 import logo from '../../assets/images/logo.svg'
 import './style.css'
+import { useNavigate } from 'react-router-dom'
 
-const index = () => {
+const Header = () => {
+  const navigate = useNavigate()
+  const gotohome = () => {
+    navigate("/main")
+  }
+
   return (
     <div className='header'>
-            <div className='logo'><img src={logo} alt='logo'></img></div>
+            <div onClick={gotohome} className='logo'><img src={logo} alt='logo'></img></div>
             <div className='rightbox'>
                 <div className='profile'></div>
             </div>
@@ -13,4 +19,4 @@ const index = () => {
   )
 }
 
-export default index
+export default Header

@@ -51,7 +51,7 @@ public class UserService {
         return matcher.matches();
     }
 
-    public UserEntity authenticateUser(String email, String password) {
+    public UserEntity authenticateUser(String email, String password) throws CustomException {
         UserEntity userEntity = userRepository.findByEmail(email)
                 .orElseThrow(() -> new CustomException(ErrorCode.USER_NOT_FOUND));
 

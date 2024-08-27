@@ -7,7 +7,6 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 const Login = () => {
-  const [username, setUsername] = useState("")
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   const [showPswd, setshowPswd] = useState(false)
@@ -25,9 +24,6 @@ const Login = () => {
     e.preventDefault();
   }
 
-  const handleUsernameChange = (e) => {
-    setUsername(e.target.value)
-    };
 
   const handleEmailChange = (e) => {
   const regex = /^[A-Za-z0-9@.]*$/;
@@ -72,11 +68,7 @@ const Login = () => {
       setLoading(false)
       return
     }
-    if (username === ""){
-      toast.error("닉네임을 입력해주세요")
-      setLoading(false)
-      return
-    }else if (email === ""){
+    if (email === ""){
       toast.error("이메일을 입력해주세요")
       setLoading(false)
       return
@@ -86,9 +78,8 @@ const Login = () => {
       return
     }
     try {
-      console.log(process.env.REACT_APP_API_URL)
+      console.log("good")
       const { data } = await axios.post(`${process.env.REACT_APP_API_URL}/auth/signup`, {
-        username,
         email,
         password
       })
@@ -98,6 +89,7 @@ const Login = () => {
       
       navigate('/login')
     } catch (e) {
+      console.log("fuck")
       if (axios.isAxiosError(e)) {
         const code = e.response.data.code
 
@@ -116,14 +108,6 @@ const Login = () => {
   return (
     <div className="login-container">
       <h1>회원가입</h1>
-      <p className='title'>회원가입하고 잃어버린 물건 찾기!</p>
-      <input
-      type="text"
-      onPaste={handleUsernameChange}
-      onChange={handleUsernameChange}
-      value={username}
-      placeholder="닉네임"
-    />
       <input
       type="text"
       onPaste={handleEmailChange}

@@ -1,4 +1,4 @@
-import React,{useEffect} from 'react'
+import React from 'react'
 import './style.css'
 import { useNavigate } from 'react-router-dom'
 import Header from '../../components/Header/index'
@@ -8,31 +8,39 @@ import add from '../../assets/images/add.svg'
 import man from '../../assets/images/man.svg'
 const Main = () => {
     const navigate = useNavigate()
-    useEffect(function(){
-        if (localStorage.getItem("refreshToken") == null){
-            navigate("/login")
+
+    const gotoevent = () =>{
+        navigate("/festival")
     }
-    })
+    const gotowrite = () =>{
+        navigate("/write")
+    }
+    const gotologin = () =>{
+        navigate("/login")
+    }
+    const gotocalender = () =>{
+        navigate("/calender")
+    }
   return (
     <div>
         <Header/>
         <div className='banner'>
             <div className='button-box'>
-                <div className='button'>
+                <div className='button' onclick = {gotocalender}>
                     <img src={calender} alt='캘린더'/>
                     <p>일정 확인</p>
                 </div>
-                <div className='button'>
+                <div className='button' onClick={gotoevent}>
                     <img src={firecracker} alt='폭죽'/>
                     <p>지역 행사</p>
                 </div>
-                <div className='button'>
+                <div className='button' onClick={gotowrite}>
                     <img src={add} alt='추가'/>
                     <p>행사 추가</p>
                 </div>
-                <div className='button'>
+                <div className='button' onClick={gotologin}>
                     <img src={man} alt='사람'/>
-                    <p>지역 행사</p>
+                    <p style={{whiteSpace:"nowrap"}}>로그인/회원가입</p>
                 </div>
             </div>
             <div className='main_banner'>
