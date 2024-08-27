@@ -19,14 +19,14 @@ const Main = () => {
         navigate("/login")
     }
     const gotocalender = () =>{
-        navigate("/calender")
+        navigate("/calendar")
     }
   return (
     <div>
         <Header/>
         <div className='banner'>
             <div className='button-box'>
-                <div className='button' onclick = {gotocalender}>
+                <div className='button' onClick={gotocalender}>
                     <img src={calender} alt='캘린더'/>
                     <p>일정 확인</p>
                 </div>
