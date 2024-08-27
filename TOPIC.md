@@ -65,7 +65,7 @@
 
 
 아키텍쳐
-./images/Group_1.png
+images/Group 1.png
 
 
 시연영상
